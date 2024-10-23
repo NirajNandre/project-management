@@ -14,6 +14,7 @@ export const getUsers = async (req: Request, res: Response): Promise<void> => {
     }
 };
 
+//specific user using cognito id
 export const getUser = async (req: Request, res: Response): Promise<void> => {
     const { cognitoId } = req.params;
     try {
